@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <ctype.h> // Include this header for the toupper function
+#include <ctype.h> 
 
 void printBoard();
 int checkWin();
@@ -42,7 +42,6 @@ int main() {
         scanf(" %c", &response);
         response = toupper(response);
 
-        // Reset the board for the new game
         for (int i = 1; i <= 9; i++) {
             board[i] = i + '0';
         }
@@ -55,8 +54,7 @@ int main() {
 }
 
 void printBoard() {
-    // Consider using a cross-platform method to clear the screen
-    // system("cls");  // Might not work on all systems
+    
     printf("\n\n");
     printf("=== TIC TAC TOE ===\n\n");
     printf("     |     |     \n");
